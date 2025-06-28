@@ -11,17 +11,17 @@ is to find optimal values for the remaining components such that the power deliv
 one of the set voltage sources is 10% of power delivered by the unknown voltage source.
 
 # Terminology
-particle(s) = List of _num_variable_ elements
-best (historical) position = Position resulting in the least error from _objective_function_
-num_variable = Number of variables in the circuit to be solved
-num_particles = Number of _particles_ in the sample space
-max_iterations = Number of iterations PSO will update for
-positions = List of all _particles_ in space
-velocities = Velocity of each _particle_ in positions
-personal_best_positions = List of the _best historical position_ for each _particle_ in _positions_
-personal_best_costs = List of the least error computed by _objective_function_ for each _particle_ in _positions_ in any iteration
-global_best_index = Index of the least value in _personal_best_costs_
-global_best_position = _Particle_ in _positions_ that resulted in the least value in _personal_best_costs_
+particle(s) = List of _num_variable_ elements  
+best (historical) position = Position resulting in the least error from _objective_function_  
+num_variable = Number of variables in the circuit to be solved  
+num_particles = Number of _particles_ in the sample space  
+max_iterations = Number of iterations PSO will update for  
+positions = List of all _particles_ in space  
+velocities = Velocity of each _particle_ in positions  
+personal_best_positions = List of the _best historical position_ for each _particle_ in _positions_  
+personal_best_costs = List of the least error computed by _objective_function_ for each _particle_ in _positions_ in any iteration  
+global_best_index = Index of the least value in _personal_best_costs_  
+global_best_position = _Particle_ in _positions_ that resulted in the least value in _personal_best_costs_  
 global_best_cost = Least error value stored in _personal_best_costs_
 
 # Program Flow
@@ -38,7 +38,7 @@ namely [error, currents, power_V1, power_V3], where error is the diƯerence in _
 and 0.1 * _power_V3_.
 
 The PSO algorithm loops for _max_iterations_ for each _particle_ in _positions_, updating
-_velocities_ and _positions_ which defines the _particle_'s updated position. For any _particle_, if the 
+_velocities_ and _positions_ which defines the _particle_'s updated position in the sample space. For any _particle_, if the 
 error computed in the ongoing iteration is less than the least error computed in any previous iteration, 
 the index corresponding to that particle is updated with the computed error in _personal_best_costs_. 
 If the computed error is also less than the _global_best_cost_, _global_best_cost_ is updated to the current error
