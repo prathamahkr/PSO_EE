@@ -1,8 +1,8 @@
 # Overview
 This python program implements Particle Swarm Optimization (PSO) algorithm to
-solve for optimal component values in an electric circuit, given the following conditions:
--Some component values are predetermined
--Some set behavior is expected from the circuit
+solve for optimal component values in an electric circuit, given the following conditions:  
+- Some component values are predetermined
+- Some set behavior is expected from the circuit
 
 For this instance of the code, we assume a circuit with 8 resistors and 3 voltage sources
 arranged as described by the linear equations in the objective function.
