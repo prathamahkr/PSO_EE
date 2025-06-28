@@ -34,7 +34,7 @@ found by taking the minimum error value computed using any _particle_ in the ran
 
 The _objective_function_ takes a list of variables, namely [R1, R5, R8, V3] provided by
 the main PSO loop, calculates currents formed in the circuit and returns a list of values,
-namely [error, currents, power_V1, power_V3], where error is the diƯerence in _power_V1_
+namely [error, currents, power_V1, power_V3], where error is the difference in _power_V1_
 and 0.1 * _power_V3_.
 
 The PSO algorithm loops for _max_iterations_ for each _particle_ in _positions_, updating
