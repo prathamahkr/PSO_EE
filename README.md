@@ -4,11 +4,8 @@ solve for optimal component values in an electric circuit, given the following c
 - Some component values are predetermined
 - Some set behavior is expected from the circuit
 
-For this instance of the code, we assume a circuit with 8 resistors and 3 voltage sources
-arranged as described by the linear equations in the objective function.
-We assume values for 5 of the 8 resistors, and 2 of the 3 voltage sources. Our objective
-is to find optimal values for the remaining components such that the power delivered by
-one of the set voltage sources is 10% of power delivered by the unknown voltage source.
+In an update, a slightly modified PSO is used to tackle the problem of Economic Dipatch in a 40 unit 
+system.
 
 # Terminology
 particle(s) = List of _num_variable_ elements  
@@ -24,7 +21,7 @@ global_best_index = Index of the least value in _personal_best_costs_
 global_best_position = _Particle_ in _positions_ that resulted in the least value in _personal_best_costs_  
 global_best_cost = Least error value stored in _personal_best_costs_
 
-# Program Flow
+# Program Flow (Genereal Outline)
 The program initializes a random space of n _particles_ (n = _num_particles_), each
 consisting of _num_variables_ elements, representing possible optimal solutions to our
 problem, and creates a list of velocities for all _particles_, initially zero. 
